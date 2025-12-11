@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz - Sparschwein App</title>
+    <style>
+        /* --- Grundeinstellungen --- */
+        :root {
+            --primary-color: #3F51B5; /* Indigo, passend zur App */
+            --text-color: #333;
+            --bg-color: #f4f6f8;
+            --container-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* --- Layout --- */
+        .page-wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            background: var(--container-bg);
+            padding: 40px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        /* --- Header --- */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* --- Inhalt --- */
+        h2 {
+            color: var(--primary-color);
+            border-left: 4px solid var(--primary-color);
+            padding-left: 12px;
+            margin-top: 30px;
+        }
+
+        h4 {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        p, ul {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background-color: #e8eaf6; /* Helles Indigo */
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #c5cae9;
+            margin: 20px 0;
+        }
+
+        /* --- Footer --- */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #888;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        /* --- Mobile Anpassung --- */
+        @media (max-width: 600px) {
+            .page-wrapper {
+                margin: 0;
+                border-radius: 0;
+                padding: 20px;
+                box-shadow: none;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <h1>Sparschwein</h1>
+            <p>Datenschutzerklärung</p>
+        </header>
+
+        <main>
+            <p><strong>Stand: 10.12.2025</strong></p>
+
+            <p>Wir freuen uns, dass Sie unsere App "Sparschwein" nutzen. Der Schutz Ihrer persönlichen Daten ist uns sehr wichtig. Da diese App so konzipiert ist, dass sie <strong>offline</strong> funktioniert und Daten primär <strong>lokal</strong> speichert, ist der Standard an Privatsphäre sehr hoch.</p>
+            
+            <p>Im Folgenden informieren wir Sie über die Art der Datenerhebung und -verwendung.</p>
+
+            <h2>1. Verantwortliche Stelle</h2>
+            <p>Verantwortlich für den Datenschutz dieser App ist:</p>
+            <p>
+                CraftedCodeLabs<br>
+                E-Mail: <a href="mailto:[craftedcodelabs@gmail.com]">[craftedcodelabs@gmail.com]</a>
+            </p>
+
+            <h2>2. Welche Daten werden erfasst?</h2>
+            <p>Die App "Sparschwein" erfasst ausschließlich Daten, die Sie aktiv eingeben. Dazu gehören:</p>
+            <ul>
+                <li>Namen von Sparzielen (z.B. "Urlaub", "Auto").</li>
+                <li>Geldbeträge (Zielbeträge, Einzahlungen, Entnahmen).</li>
+                <li>Zeitstempel der Transaktionen.</li>
+            </ul>
+            <p>Es werden <strong>keine</strong> automatischen Hintergrunddaten (wie Standort, IP-Adresse oder Geräte-ID) zu Tracking-Zwecken erfasst.</p>
+
+            <h2>3. Wo werden die Daten gespeichert?</h2>
+            <p>Alle Daten werden ausschließlich <strong>lokal auf Ihrem Endgerät</strong> gespeichert.</p>
+            <ul>
+                <li>Wir verwenden die technologische Basis der "Shared Preferences" und des lokalen Dateisystems Ihres Betriebssystems.</li>
+                <li>Es findet <strong>keine Übertragung</strong> an externe Server, Cloud-Dienste oder Datenbanken des Entwicklers statt.</li>
+                <li>Wir als Entwickler haben zu keinem Zeitpunkt Zugriff auf Ihre Finanzdaten.</li>
+            </ul>
+
+            <h2>4. Berechtigungen und Dateizugriff</h2>
+            <p>Damit die App vollumfänglich funktionieren kann, benötigt sie Zugriff auf bestimmte Systemfunktionen:</p>
+            
+            <div class="highlight-box">
+                <strong>Speicherzugriff (Lesen/Schreiben)</strong><br>
+                Die App bietet eine Funktion zum <strong>Exportieren und Importieren</strong> von Backups. Wenn Sie die Funktion "Export" nutzen, speichert die App eine Datei (<code>sparschwein_backup_DATUM.json</code>) in einem von Ihnen gewählten Ordner. Beim Import liest die App die von Ihnen ausgewählte Datei.
+            </div>
+
+            <p>Dieser Zugriff erfolgt nur, wenn Sie die Funktion aktiv auslösen.</p>
+
+            <h2>5. Weitergabe an Dritte</h2>
+            <p>Da die App keine Internetverbindung für ihre Kernfunktionen nutzt und keine Analyse-Tools (wie Google Analytics) oder Werbenetzwerke integriert hat, werden <strong>keine Daten an Dritte weitergegeben</strong>.</p>
+
+            <h2>6. Export und Backup</h2>
+            <p>Sie haben die Möglichkeit, Ihre Daten als JSON-Datei zu exportieren. Bitte beachten Sie:</p>
+            <ul>
+                <li>Diese Datei ist unverschlüsselt (Klartext).</li>
+                <li>Wenn Sie diese Datei speichern oder versenden (z.B. per E-Mail oder Messenger), obliegt die Sicherheit dieser Datei Ihrer Verantwortung.</li>
+            </ul>
+
+            <h2>7. Ihre Rechte (Auskunft, Löschung)</h2>
+            <p>Da alle Daten lokal auf Ihrem Gerät liegen, haben Sie die volle Kontrolle:</p>
+            <ul>
+                <li><strong>Auskunft:</strong> Sie können alle gespeicherten Daten direkt in der App in der Statistik- oder Verlaufsansicht einsehen.</li>
+                <li><strong>Löschung:</strong> Sie können einzelne Sparziele oder die gesamte App löschen. Wenn Sie die App von Ihrem Gerät deinstallieren, werden alle damit verbundenen Daten unwiderruflich von Ihrem Gerät entfernt.</li>
+            </ul>
+
+            <h2>8. Kontakt</h2>
+            <p>Bei Fragen zum Datenschutz können Sie sich jederzeit an die unter Punkt 1 genannte Adresse wenden.</p>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Sparschwein App. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
